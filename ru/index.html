@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Психолог Кривой Рог — Вероника Беруненко</title>
+  <meta name="description"
+    content="Психолог Кривой Рог — Вероника Беруненко. Помогаю преодолеть тревожность, панические атаки и конфликты в отношениях. Онлайн-консультации и очные встречи." />
+  <meta name="google-site-verification" content="IZDgVJVtFoulQm3_X6xYme1zn8JJkO6QfLFJmxfyneY" />
+  <meta name="keywords"
+    content="психолог кривой рог, психотерапевт кривой рог, психолог онлайн украина, психолог украина, детский психолог, детский психолог кривой рог, консультация психолога, психолог онлайн, психотерапевт украина" />
+
+  <!-- Hreflang -->
+  <link rel="alternate" hreflang="uk" href="https://berunenko.com/" />
+  <link rel="alternate" hreflang="ru" href="https://berunenko.com/ru/" />
+  <link rel="alternate" hreflang="x-default" href="https://berunenko.com/" />
+
+  <!-- OG -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Психолог Кривой Рог — Вероника Беруненко" />
+  <meta property="og:description"
+    content="Психолог в Кривом Роге — Вероника Беруненко. Помогаю преодолеть тревожность, панические атаки, депрессию и конфликты в отношениях. Онлайн-консультации." />
+  <meta property="og:url" content="https://berunenko.com/ru/" />
+  <meta property="og:image" content="https://berunenko.com/opengraph.jpg" />
+  <meta property="og:locale" content="ru_RU" />
+
+  <link rel="canonical" href="https://berunenko.com/ru/" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="../favicon.ico" sizes="any" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../style.css" />
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["MedicalBusiness", "Person"],
+    "name": "Вероника Беруненко",
+    "jobTitle": "Психолог",
+    "description": "Психолог в Кривом Роге. Помогаю преодолеть тревожность, панические атаки, депрессию и конфликты в отношениях.",
+    "url": "https://berunenko.com/ru/",
+    "image": "https://berunenko.com/opengraph.jpg",
+    "telephone": "+380676304012",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Кривой Рог",
+      "addressRegion": "Днепропетровская область",
+      "addressCountry": "UA"
+    },
+    "areaServed": ["Кривой Рог", "Украина"],
+    "availableLanguage": ["Russian"],
+    "sameAs": [
+      "https://www.instagram.com/veronika.berunenko",
+      "https://www.facebook.com/veronika.berunenko/"
+    ],
+    "priceRange": "1499–6499 грн"
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════════════════════════════
+     NAVBAR
+════════════════════════════════════════════════════ -->
+  <nav id="navbar">
+    <div class="container nav-inner">
+      <a href="#" class="nav-logo">
+        <img src="../navbarlogo3.svg" alt="Вероника Беруненко" />
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <button class="nav-link" onclick="scrollToSection('about')">Обо мне</button>
+        <button class="nav-link" onclick="scrollToSection('reviews')">Отзывы</button>
+        <button class="nav-link" onclick="scrollToSection('education')">Образование</button>
+        <button class="nav-link" onclick="scrollToSection('pricing')">Цены</button>
+        <button class="nav-link" onclick="scrollToSection('contact')">Контакты</button>
+        <button class="btn-primary nav-cta" onclick="scrollToSection('contact')">Записаться</button>
+      </div>
+
+      <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Меню">
+        <svg id="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        <svg id="icon-close" class="hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu hidden" id="mobileMenu">
+      <button class="mobile-link" onclick="scrollToSection('about')">Обо мне</button>
+      <button class="mobile-link" onclick="scrollToSection('reviews')">Отзывы</button>
+      <button class="mobile-link" onclick="scrollToSection('education')">Образование</button>
+      <button class="mobile-link" onclick="scrollToSection('pricing')">Цены</button>
+      <button class="mobile-link" onclick="scrollToSection('contact')">Контакты</button>
+      <button class="btn-primary mobile-cta" onclick="scrollToSection('contact')">Записаться</button>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ═══════════════════════════════════════════════════
+     HERO
+════════════════════════════════════════════════════ -->
+    <section id="hero" class="section-mint section-fullscreen">
+      <div class="container hero-grid">
+
+        <!-- Фото для мобильных (отображается первым) -->
+        <div class="hero-photo-mobile">
+          <div class="photo-wrap">
+            <img src="../profile.jpg" alt="Вероника Беруненко — Психолог, Кривой Рог" />
+            <div class="photo-overlay"></div>
+          </div>
+        </div>
+
+        <!-- Текст -->
+        <div class="hero-text">
+          <h1 style="display: flex; flex-direction: column; gap: 1.25rem; margin: 0;">
+            <span class="role-badge">Психолог Кривой Рог</span>
+            <span>Вероника Беруненко</span>
+          </h1>
+          <div class="hero-tagline">
+            <p>Верю, что у каждого человека есть внутренний ресурс для счастливой жизни, и моя задача — помочь вам его
+              найти. Консультирую онлайн и лично в г. Кривой Рог.</p>
+          </div>
+          <div class="hero-cta-wrap">
+            <button class="btn-primary btn-large" onclick="scrollToSection('contact')">
+              Записаться на консультацию
+            </button>
+          </div>
+        </div>
+
+        <!-- Фото для десктопа -->
+        <div class="hero-photo-desktop">
+          <div class="photo-wrap">
+            <img src="../profile.jpg" alt="Вероника Беруненко — психолог, Кривой Рог" />
+            <div class="photo-overlay"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+     ОБО МНЕ
+════════════════════════════════════════════════════ -->
+    <section id="about" class="section-mint section-fullscreen">
+      <div class="container">
+        <div class="about-grid">
+          <!-- Текст -->
+          <div class="about-text">
+
+            <h2>Обо мне</h2>
+            <p>Здравствуйте! Меня зовут <strong>Вероника Беруненко</strong>, я — дипломированный практический и
+              клинический психолог с <strong>7-летним опытом</strong> работы. Помогаю людям справляться с тревогой,
+              паническими атаками, депрессией, трудностями в отношениях, последствиями травм и многими другими
+              проблемами.</p>
+            <p>Мой путь в психологию был глубоко осознанным. Имея за плечами фундаментальное образование в области
+              биологии и медицины, я прекрасно понимаю, как тесно связаны наши эмоции, психика и физическое здоровье
+              тела. Это позволяет мне видеть картину целиком и подходить к каждому клиенту комплексно.</p>
+            <p>Консультирую онлайн и лично в городе Кривой Рог.</p>
+
+            <!-- Статистика -->
+            <div class="about-stats">
+              <div class="about-stat">
+                <span class="about-stat-number">7+</span>
+                <span class="about-stat-label">лет практики</span>
+              </div>
+              <div class="about-stat">
+                <span class="about-stat-number">3</span>
+                <span class="about-stat-label">высших образования</span>
+              </div>
+              <div class="about-stat">
+                <span class="about-stat-number">1000+</span>
+                <span class="about-stat-label">клиентов</span>
+              </div>
+            </div>
+
+            <button class="btn-primary btn-large" onclick="scrollToSection('contact')">
+              Записаться на консультацию
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+     ПРОБЛЕМЫ
+════════════════════════════════════════════════════ -->
+    <section id="problems" class="section-white section-fullscreen">
+      <div class="container">
+        <div class="section-header">
+          <h2>Проблемы, которые я помогу решить</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="problems-grid">
+          <div class="problem-card" id="anxiety" onclick="this.classList.toggle('active')">
+            <div class="problem-card-header">
+              <div class="problem-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path
+                    d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96-.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 1.44-4.14Z" />
+                  <path
+                    d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96-.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-1.44-4.14Z" />
+                </svg>
+              </div>
+              <h3>Тревожность, панические атаки, депрессия, бессонница</h3>
+              <svg class="problem-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 9l6 6 6-6" />
+              </svg>
+            </div>
+            <div class="problem-card-body">
+              <p>Помогу найти причины постоянного напряжения, проработать страхи и восстановить внутренний
+                баланс.<br><br>Мы изменим негативные установки, чтобы вернуть вам спокойствие и радость жизни.</p>
+            </div>
+          </div>
+
+          <div class="problem-card" id="self-esteem" onclick="this.classList.toggle('active')">
+            <div class="problem-card-header">
+              <div class="problem-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <circle cx="12" cy="8" r="4" />
+                  <path d="M20 21a8 8 0 1 0-16 0" />
+                </svg>
+              </div>
+              <h3>Неуверенность в себе, сложности самоидентификации</h3>
+              <svg class="problem-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 9l6 6 6-6" />
+              </svg>
+            </div>
+            <div class="problem-card-body">
+              <p>Вместе мы преодолеем внутренние барьеры и научимся выстраивать здоровые личные границы.<br><br>Вы
+                сможете опереться на себя, осознать свои истинные желания и раскрыть свой потенциал.</p>
+            </div>
+          </div>
+
+          <div class="problem-card" id="teenagers" onclick="this.classList.toggle('active')">
+            <div class="problem-card-header">
+              <div class="problem-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Z" />
+                  <path d="M9 12h.01M15 12h.01M10 16c.5.3 1.2.5 2 .5s1.5-.2 2-.5" />
+                </svg>
+              </div>
+              <h3>Психология подростков</h3>
+              <svg class="problem-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 9l6 6 6-6" />
+              </svg>
+            </div>
+            <div class="problem-card-body">
+              <p>Бережная поддержка в период взросления: помощь в преодолении замкнутости, агрессии и трудностей в
+                школе.<br><br>Помогу наладить доверительный диалог между подростком и родителями без ссор и
+                ультиматумов.</p>
+            </div>
+          </div>
+
+          <div class="problem-card" id="addictions" onclick="this.classList.toggle('active')">
+            <div class="problem-card-header">
+              <div class="problem-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" />
+                  <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" />
+                </svg>
+              </div>
+              <h3>Психологическая зависимость, вредные привычки</h3>
+              <svg class="problem-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 9l6 6 6-6" />
+              </svg>
+            </div>
+            <div class="problem-card-body">
+              <p>Помогу осознать скрытые триггеры, которые запускают разрушительное поведение, и бережно их
+                проработать.<br><br>Мы выстроим новые, здоровые стратегии преодоления стресса на пути к свободе от
+                зависимостей.</p>
+            </div>
+          </div>
+
+          <div class="problem-card" id="relationships" onclick="this.classList.toggle('active')">
+            <div class="problem-card-header">
+              <div class="problem-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path
+                    d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+                </svg>
+              </div>
+              <h3>Конфликтные отношения с близкими, детьми, на работе</h3>
+              <svg class="problem-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 9l6 6 6-6" />
+              </svg>
+            </div>
+            <div class="problem-card-body">
+              <p>Научимся выражать свои эмоции и слышать партнера, чтобы выйти из замкнутого круга
+                обид.<br><br>Помогу разрешить затяжные конфликты и построить гармоничные, безопасные отношения.</p>
+            </div>
+          </div>
+
+          <div class="problem-card" id="ptsd" onclick="this.classList.toggle('active')">
+            <div class="problem-card-header">
+              <div class="problem-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path
+                    d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
+                </svg>
+              </div>
+              <h3>ПТСР</h3>
+              <svg class="problem-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 9l6 6 6-6" />
+              </svg>
+            </div>
+            <div class="problem-card-body">
+              <p>Помощь в преодолении посттравматического стрессового расстройства.<br><br>Помогу снизить интенсивность
+                болезненных воспоминаний и вернуть чувство контроля над собственной жизнью.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+     ОТЗЫВЫ / КАРУСЕЛЬ
+════════════════════════════════════════════════════ -->
+    <section id="reviews" class="section-mint section-fullscreen">
+      <div class="container">
+        <div class="section-header">
+          <h2>Отзывы клиентов</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="carousel-wrap">
+          <!-- Стрелка влево -->
+          <button class="carousel-arrow" id="carouselPrev" aria-label="Назад">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
+
+          <!-- Карточка отзыва -->
+          <div class="carousel-card-wrap" id="carouselTrack">
+            <div class="carousel-card">
+              <div class="quote-mark">"</div>
+              <p class="review-text" id="reviewText"></p>
+              <div class="review-author-wrap">
+                <p class="review-author" id="reviewAuthor"></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Стрелка вправо -->
+          <button class="carousel-arrow" id="carouselNext" aria-label="Вперед">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Точки навигации -->
+        <div class="carousel-dots" id="carouselDots"></div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+     ОБРАЗОВАНИЕ
+════════════════════════════════════════════════════ -->
+    <section id="education" class="section-white section-fullscreen">
+      <div class="container">
+        <div class="section-header">
+          <h2>Образование и сертификаты</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="education-groups">
+
+          <!-- ГРУППА 1: Высшее образование (открыта на мобильных) -->
+          <div class="edu-group" id="eduGroup1">
+            <button class="edu-group-header open" onclick="toggleEduGroup('eduGroup1')" aria-expanded="true">
+              <span class="edu-group-title">Высшее образование</span>
+              <svg class="edu-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 9l6 6 6-6" />
+              </svg>
+            </button>
+            <div class="edu-group-body">
+              <div class="education-list">
+                <div class="education-item diploma-trigger" onclick="openDiploma('../diploma1.jpeg')">
+                  <div class="education-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                      <path d="M6 12v5c3 3 9 3 12 0v-5" />
+                    </svg></div>
+                  <div>
+                    <p class="edu-degree">Магистр, специализация "Практическая психология"</p>
+                    <p class="edu-institution">Межрегиональная Академия управления персоналом (МАУП), 2020</p>
+                    <span class="diploma-view-btn">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                        <circle cx="12" cy="12" r="3" />
+                      </svg>
+                      Посмотреть диплом
+                    </span>
+                  </div>
+                </div>
+                <div class="education-item diploma-trigger" onclick="openDiploma('../diploma2.jpeg')">
+                  <div class="education-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                      <path d="M6 12v5c3 3 9 3 12 0v-5" />
+                    </svg></div>
+                  <div>
+                    <p class="edu-degree">Магистр, специализация "Фармация"</p>
+                    <p class="edu-institution">Национальный Фармацевтический Университет, 2009</p>
+                    <span class="diploma-view-btn">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                        <circle cx="12" cy="12" r="3" />
+                      </svg>
+                      Посмотреть диплом
+                    </span>
+                  </div>
+                </div>
+                <div class="education-item diploma-trigger" onclick="openDiploma('../diploma6.jpeg')">
+                  <div class="education-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                      <path d="M6 12v5c3 3 9 3 12 0v-5" />
+                    </svg></div>
+                  <div>
+                    <p class="edu-degree">Магистр, специализация "Биология"</p>
+                    <p class="edu-institution">Криворожский государственный педагогический институт, 1998</p>
+                    <span class="diploma-view-btn">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                        <circle cx="12" cy="12" r="3" />
+                      </svg>
+                      Посмотреть диплом
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ГРУППА 2: Профессиональные курсы (закрыта на мобильных) -->
+          <div class="edu-group" id="eduGroup2">
+            <button class="edu-group-header" onclick="toggleEduGroup('eduGroup2')" aria-expanded="false">
+              <span class="edu-group-title">Профессиональные курсы</span>
+              <svg class="edu-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 9l6 6 6-6" />
+              </svg>
+            </button>
+            <div class="edu-group-body" style="display:none">
+              <div class="education-list">
+                <div class="education-item diploma-trigger" onclick="openDiploma('../diploma4.jpeg')">
+                  <div class="education-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                      <path d="M6 12v5c3 3 9 3 12 0v-5" />
+                    </svg></div>
+                  <div>
+                    <p class="edu-degree">Член Украинского Союза Психотерапевтов</p>
+                    <p class="edu-institution">Украинский союз психотерапевтов, 2025</p>
+                    <span class="diploma-view-btn">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                        <circle cx="12" cy="12" r="3" />
+                      </svg>
+                      Посмотреть диплом
+                    </span>
+                  </div>
+                </div>
+                <div class="education-item diploma-trigger" onclick="openDiploma('../diploma3.jpeg')">
+                  <div class="education-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                      <path d="M6 12v5c3 3 9 3 12 0v-5" />
+                    </svg></div>
+                  <div>
+                    <p class="edu-degree">Клиническая психология</p>
+                    <p class="edu-institution">Межрегиональная Академия управления персоналом (МАУП), 2024</p>
+                    <span class="diploma-view-btn">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                        <circle cx="12" cy="12" r="3" />
+                      </svg>
+                      Посмотреть диплом
+                    </span>
+                  </div>
+                </div>
+                <div class="education-item diploma-trigger" onclick="openDiploma('../diploma5.jpeg')">
+                  <div class="education-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                      <path d="M6 12v5c3 3 9 3 12 0v-5" />
+                    </svg></div>
+                  <div>
+                    <p class="edu-degree">Клиническая психология и психотерапия травмы</p>
+                    <p class="edu-institution">Международный Институт Последипломного образования, 2024</p>
+                    <span class="diploma-view-btn">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                        <circle cx="12" cy="12" r="3" />
+                      </svg>
+                      Посмотреть диплом
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+     ЦЕНЫ
+════════════════════════════════════════════════════ -->
+    <section id="pricing" class="section-mint section-fullscreen">
+      <div class="container">
+        <div class="section-header">
+          <h2>Стоимость консультаций</h2>
+          <p class="section-sub">Выберите удобный для вас формат работы</p>
+        </div>
+        <div class="pricing-grid">
+
+          <!-- Тариф 1 -->
+          <div class="pricing-card">
+            <h3>Одна консультация</h3>
+            <div class="pricing-price">1 499 грн</div>
+            <ul class="pricing-features">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                </svg><span>Одна консультация 60 мин</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                </svg><span>Выявление базовых проблем</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                </svg><span>Определение запроса и целей</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                </svg><span>Рекомендации по дальнейшей работе</span></li>
+            </ul>
+            <button class="btn-primary btn-full" onclick="scrollToSection('contact')">Записаться</button>
+          </div>
+
+          <!-- Тариф 2 (популярный) -->
+          <div class="pricing-card pricing-popular">
+            <div class="popular-badge">Рекомендованный</div>
+            <h3>Пакет консультаций</h3>
+            <div class="pricing-price">6 499 грн/<span
+                style="font-size: 1rem; font-weight: 400; display: block; margin-top: -0.8rem; margin-bottom: 0.9em;">1
+                299 грн консультация</span></div>
+            <ul class="pricing-features">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                </svg><span>5 консультаций по 60 мин</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                </svg><span>Работа с конкретным запросом</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                </svg><span>Проработка причин проблемы</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                </svg><span>Составление плана решения</span></li>
+            </ul>
+            <button class="btn-popular btn-full" onclick="scrollToSection('contact')">Записаться</button>
+          </div>
+
+          <!-- Тариф 3 -->
+          <div class="pricing-card">
+            <h3>Глубокая терапия</h3>
+            <div class="pricing-price">9 599 грн/<span
+                style="font-size: 1rem; font-weight: 400; display: block; margin-top: -0.8rem; margin-bottom: 0.9em;">1
+                199 грн консультация</span></div>
+            <ul class="pricing-features">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                </svg><span>8 консультаций по 60 мин</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                </svg><span>Глубокая работа с травмами</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                </svg><span>Индивидуальная программа терапии</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                </svg><span>Долгосрочная поддержка</span></li>
+            </ul>
+            <button class="btn-primary btn-full" onclick="scrollToSection('contact')">Записаться</button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+     КОНТАКТЫ
+════════════════════════════════════════════════════ -->
+    <section id="contact" class="section-white section-fullscreen">
+      <div class="container">
+        <div class="contact-card">
+
+          <!-- Десктоп: логотип слева -->
+          <div class="contact-logo">
+            <img src="../logo.svg" alt="Вероника Беруненко" />
+          </div>
+
+          <!-- Контент справа -->
+          <div class="contact-content">
+            <!-- Мобильный: логотип сверху -->
+            <div class="contact-logo-mobile">
+              <img src="../logo.svg" alt="Вероника Беруненко" />
+            </div>
+
+            <h2>Записаться на консультацию</h2>
+            <p class="contact-sub">Выберите удобный для вас способ связи со мной</p>
+
+            <div class="social-grid">
+              <a href="https://wa.me/380676304012" target="_blank" rel="noopener noreferrer" class="social-btn">
+                <img src="../whatsapp.svg" alt="WhatsApp" class="social-img" />
+                <span>WHATSAPP</span>
+              </a>
+              <a href="https://t.me/+380676304012" target="_blank" rel="noopener noreferrer" class="social-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M22 2 11 13" />
+                  <path d="M22 2 15 22 11 13 2 9l20-7z" />
+                </svg>
+                <span>TELEGRAM</span>
+              </a>
+              <a href="https://www.instagram.com/veronika.berunenko" target="_blank" rel="noopener noreferrer"
+                class="social-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                </svg>
+                <span>INSTAGRAM</span>
+              </a>
+              <a href="https://www.facebook.com/veronika.berunenko/" target="_blank" rel="noopener noreferrer"
+                class="social-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                </svg>
+                <span>FACEBOOK</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════════════ -->
+  <footer>
+    <div class="container footer-inner">
+      <!-- Переключатель языка: UA ведёт на украинскую версию, RU активен -->
+      <div class="lang-switcher">
+        <a href="https://berunenko.com/" class="lang-btn">UA</a>
+        <button class="lang-btn lang-active">RU</button>
+      </div>
+      <p class="footer-copy">
+        © <span id="footerYear"></span>
+        Вероника Беруненко. Все права защищены.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Кнопка прокрутки наверх -->
+  <button class="scroll-top hidden" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})"
+    aria-label="Вернуться наверх">
+    <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+    </svg>
+  </button>
+
+  <!-- Лайтбокс диплома -->
+  <div id="diplomaLightbox" onclick="closeDiploma()"
+    style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.8); z-index:9999; align-items:center; justify-content:center; cursor:zoom-out;">
+    <img id="diplomaImg" src=""
+      style="max-width:90%; max-height:90vh; border-radius:0.5rem; box-shadow:0 8px 40px rgba(0,0,0,0.4);">
+  </div>
+
+  <script src="../script.js"></script>
+</body>
+
+</html>
