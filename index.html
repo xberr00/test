@@ -10,7 +10,11 @@
   <meta name="google-site-verification" content="IZDgVJVtFoulQm3_X6xYme1zn8JJkO6QfLFJmxfyneY" />
   <meta name="keywords"
     content="психолог кривий ріг, психотерапевт кривий ріг, психолог онлайн україна, психолог україна, кривий ріг психолог, дитячий психолог, дитячий психолог кривий ріг, консультація психолога, психолог онлайн, психотерапевт україна, психолог кривой рог, психотерапевт кривой рог, психолог украина онлайн, кривой рог психолог, детский психолог, детский психолог кривой рог" />
+  
+    <link rel="preload" as="image" href="profile.jpg" />
 
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
   <!-- Hreflang -->
   <link rel="alternate" hreflang="uk" href="https://berunenko.com/" />
   <link rel="alternate" hreflang="ru" href="https://berunenko.com/ru/" />
@@ -45,29 +49,49 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": ["MedicalBusiness", "Person"],
-    "name": "Вероніка Беруненко",
-    "alternateName": "Вероника Беруненко",
-    "jobTitle": "Психолог / Психолог",
-    "description": "Психолог у Кривому Розі. Допомагаю подолати тривожність, панічні атаки, депресію та конфлікти у стосунках. Онлайн-консультації по всій Україні.",
-    "disambiguatingDescription": "Психолог в Кривом Роге. Помогаю преодолеть тревожность, панические атаки, депрессию и конфликты в отношениях. Онлайн-консультации по всей Украине.",
-    "url": "https://berunenko.com/",
-    "image": "https://berunenko.com/opengraph.jpg",
-    "telephone": "+380676304012",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Кривий Ріг",
-      "alternateName": "Кривой Рог",
-      "addressRegion": "Дніпропетровська область",
-      "addressCountry": "UA"
-    },
-    "areaServed": ["Кривий Ріг", "Україна", "Кривой Рог", "Украина"],
-    "availableLanguage": ["Ukrainian", "Russian"],
-    "sameAs": [
-      "https://www.instagram.com/veronika.berunenko",
-      "https://www.facebook.com/veronika.berunenko/"
-    ],
-    "priceRange": "1499–6499 грн"
+    "@graph": [
+      {
+        "@type": "MedicalBusiness",
+        "@id": "https://berunenko.com/#business",
+        "name": "Психолог Вероніка Беруненко",
+        "image": "https://berunenko.com/opengraph.jpg",
+        "telephone": "+380676304012",
+        "description": "Психолог у Кривому Розі. Допомагаю подолати тривожність, панічні атаки, депресію та конфлікти у стосунках. Онлайн-консультації по всій Україні.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Кривий Ріг",
+          "addressRegion": "Дніпропетровська область",
+          "addressCountry": "UA"
+        },
+        "areaServed": ["Кривий Ріг", "Україна", "Кривой Рог", "Украина"],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5.0",
+          "reviewCount": "7"
+        },
+        "offers": {
+          "@type": "AggregateOffer",
+          "priceCurrency": "UAH",
+          "lowPrice": "1499",
+          "highPrice": "6499",
+          "offerCount": "3"
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://berunenko.com/#person",
+        "name": "Вероніка Беруненко",
+        "jobTitle": "Психолог",
+        "url": "https://berunenko.com/",
+        "sameAs": [
+          "https://www.instagram.com/veronika.berunenko",
+          "https://www.facebook.com/veronika.berunenko/"
+        ],
+        "worksFor": {
+          "@id": "https://berunenko.com/#business"
+        }
+      }
+    ]
   }
   </script>
 </head>
@@ -84,12 +108,21 @@
       </a>
 
       <div class="nav-links" id="navLinks">
-        <button class="nav-link" onclick="scrollToSection('about')">Про мне</button>
-        <button class="nav-link" onclick="scrollToSection('reviews')">Відгуки</button>
-        <button class="nav-link" onclick="scrollToSection('education')">Освіта</button>
-        <button class="nav-link" onclick="scrollToSection('pricing')">Ціни</button>
-        <button class="nav-link" onclick="scrollToSection('contact')">Контакти</button>
-        <button class="btn-primary nav-cta" onclick="scrollToSection('contact')">Записатись</button>
+        <a href="#reviews" class="nav-link" onclick="scrollToSection('reviews'); return false;">
+        <span data-uk="Відгуки">Відгуки</span>
+      </a>
+      <a href="#education" class="nav-link" onclick="scrollToSection('education'); return false;">
+        <span data-uk="Освіта">Освіта</span>
+      </a>
+      <a href="#pricing" class="nav-link" onclick="scrollToSection('pricing'); return false;">
+        <span data-uk="Ціни">Ціни</span>
+      </a>
+      <a href="#contact" class="nav-link" onclick="scrollToSection('contact'); return false;">
+        <span data-uk="Контакти">Контакти</span>
+      </a>
+      <a href="#contact" class="btn-primary nav-cta" onclick="scrollToSection('contact'); return false;">
+        <span data-uk="Записатись">Записатись</span>
+      </a>
       </div>
 
       <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Меню">
@@ -104,13 +137,12 @@
 
     <!-- Mobile menu -->
     <div class="mobile-menu hidden" id="mobileMenu">
-      <button class="mobile-link" onclick="scrollToSection('about')">Про мне</button>
-      <button class="mobile-link" onclick="scrollToSection('reviews')"><span data-uk="Відгуки">Відгуки</span></button>
-      <button class="mobile-link" onclick="scrollToSection('education')"><span data-uk="Освіта">Освіта</span></button>
-      <button class="mobile-link" onclick="scrollToSection('pricing')"><span data-uk="Ціни">Ціни</span></button>
-      <button class="mobile-link" onclick="scrollToSection('contact')"><span data-uk="Контакти">Контакти</span></button>
-      <button class="btn-primary mobile-cta" onclick="scrollToSection('contact')"><span
-          data-uk="Записатись">Записатись</span></button>
+      <a href="#reviews" class="mobile-link" onclick="scrollToSection('reviews'); return false;"><span data-uk="Відгуки">Відгуки</span></a>
+    <a href="#education" class="mobile-link" onclick="scrollToSection('education'); return false;"><span data-uk="Освіта">Освіта</span></a>
+    <a href="#pricing" class="mobile-link" onclick="scrollToSection('pricing'); return false;"><span data-uk="Ціни">Ціни</span></a>
+    <a href="#contact" class="mobile-link" onclick="scrollToSection('contact'); return false;"><span data-uk="Контакти">Контакти</span></a>
+    <a href="#contact" class="btn-primary mobile-cta" onclick="scrollToSection('contact'); return false;"><span data-uk="Записатись">Записатись</span></a>
+        <span data-uk="Записатись">Записатись</span></button>
     </div>
   </nav>
 
